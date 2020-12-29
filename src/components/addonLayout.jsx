@@ -1,9 +1,8 @@
 /* eslint-disable no-unused-vars */
-import React, { Component, Fragment } from "react";
-import ScreenReader from "../screen-reader/screenReader.js";
-// import { start, stop } from "../screen-reader/main.js";
-import { Toggle } from "react-toggle-component";
-import styled from "styled-components";
+import React, { Component } from 'react';
+import { Toggle } from 'react-toggle-component';
+import styled from 'styled-components';
+import ScreenReader from '../screen-reader/screenReader';
 
 const Label = styled.label`
   display: grid;
@@ -22,16 +21,14 @@ const TextContent = styled.p`
   border: 2px solid blue;
   padding: 10px;
   margin: 16px 8px;
+  background: lightgrey;
 `;
 
 export default class AddonLayout extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      enabledScreenReader: props.enabledScreenReader
-        ? props.enabledScreenReader
-        : false,
-      screenReaderText: "",
+      screenReaderText: '',
       voice: false,
       text: false,
       screenReaderStatus: false,
@@ -42,15 +39,16 @@ export default class AddonLayout extends Component {
 
   componentDidMount() {
     window.addEventListener(
-      "screen-reader-text-changed",
-      this.handleTextChange.bind(this)
+      'screen-reader-text-changed',
+      this.handleTextChange.bind(this),
     );
-    this.storybookIframe = document.getElementById("storybook-preview-iframe");
+    this.storybookIframe = document.getElementById('storybook-preview-iframe');
   }
+
   componentWillUnmount() {
     window.removeEventListener(
-      "screen-reader-text-changed",
-      this.handleTextChange
+      'screen-reader-text-changed',
+      this.handleTextChange,
     );
   }
 
@@ -59,22 +57,6 @@ export default class AddonLayout extends Component {
     this.setState({
       screenReaderText: text,
     });
-  }
-
-  render() {
-    return (
-      <Fragment>
-        <Label htmlFor="toggle-voice">
-          <Toggle name="toggle-voice" onToggle={this.handleVoiceToggleChange} />
-          Voice Reader
-        </Label>
-        <Label htmlFor="toggle-text">
-          <Toggle name="toggle-text" onToggle={this.handleTextToggleChange} />
-          Text Reader
-        </Label>
-        <TextContent hidden={!this.state.text}>{this.state.screenReaderText}</TextContent>
-      </Fragment>
-    );
   }
 
   async handleVoiceToggleChange(ev) {
@@ -88,15 +70,17 @@ export default class AddonLayout extends Component {
   }
 
   async updateReaderOutput() {
-    this.screenReader.voiceEnabled = this.state.voice;
-    this.screenReader.textEnabled = this.state.text;
+    const { voice, text } = this.state;
+    this.screenReader.voiceEnabled = voice;
+    this.screenReader.textEnabled = text;
   }
-  
+
   async updateReaderStatus() {
     // Start reader from screenReaderStatus off
+    const { voice, text, screenReaderStatus } = this.state;
     if (
-      !this.state.screenReaderStatus &&
-      (this.state.voice || this.state.text)
+      !screenReaderStatus
+      && (voice || text)
     ) {
       await this.setState({ screenReaderStatus: true });
       this.screenReader = new ScreenReader();
@@ -104,9 +88,9 @@ export default class AddonLayout extends Component {
       this.screenReader.start();
     } else if (
       // Stop reader
-      this.state.screenReaderStatus &&
-      !this.state.voice &&
-      !this.state.text
+      screenReaderStatus
+      && !voice
+      && !text
     ) {
       await this.setState({ screenReaderStatus: false });
       this.screenReader = null;
@@ -115,7 +99,23 @@ export default class AddonLayout extends Component {
     } else {
       this.updateReaderOutput();
     }
+  }
 
-    // Update the states
+  render() {
+    return (
+      <>
+        <Label htmlFor="toggle-voice">
+          <Toggle name="toggle-voice" onToggle={this.handleVoiceToggleChange} />
+          Voice Reader
+        </Label>
+        <Label htmlFor="toggle-text">
+          <Toggle name="toggle-text" onToggle={this.handleTextToggleChange} />
+          Text Reader
+        </Label>
+        <TextContent hidden={!this.state.text}>
+          {this.state.screenReaderText}
+        </TextContent>
+      </>
+    );
   }
 }
