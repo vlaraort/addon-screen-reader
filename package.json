@@ -1,0 +1,39 @@
+{
+  "name": "addon-screen-reader",
+  "version": "1.0.0",
+  "description": "A Screen Reader Storybook addon",
+  "main": "dist/preset.js",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "*.js",
+    "*.css"
+  ],
+  "keywords": [
+    "storybook",
+    "addons"
+  ],
+  "author": "Víctor Lara",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@storybook/components": "^6.1.11",
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "query-selector-shadow-dom": "^0.8.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-toggle-component": "^3.0.8",
+    "styled-components": "^5.2.1"
+  },
+  "scripts": {
+    "build": "babel ./src --out-dir ./dist",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10"
+  }
+}

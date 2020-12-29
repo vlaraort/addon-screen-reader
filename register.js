@@ -1,0 +1,3 @@
+// eslint-disable-next-line import/no-unresolved
+// require('./dist/register');
+require('./dist/register');
