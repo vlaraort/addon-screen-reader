@@ -144,7 +144,6 @@ function isReadableElement(element) {
     return true;
   }
 
-  console.log(element.focus, element);
   return false;
 }
 
@@ -161,8 +160,6 @@ function hasDirectText(node) {
 }
 
 function createFocusList() {
-  // console.log(querySelectorAllDeep("html, body >:not( [aria-hidden=true] )", storyDocument))
-  // debugger;
   focusList.push(
     ...querySelectorAllDeep(
       "body, #root >:not( [aria-hidden=true] )",
@@ -179,13 +176,6 @@ function createFocusList() {
 }
 
 function getActiveElement() {
-  //   debugger;
-  //   if (
-  //     storyDocument.activeElement &&
-  //     storyDocument.activeElement !== storyDocument.body
-  //   ) {
-  //     return storyDocument.activeElement;
-  //   }
   return focusList[0];
 }
 

@@ -104,7 +104,6 @@ export default class ScreenReader {
   }
 
   say(speech, callback) {
-      debugger;
     if(this.voiceEnabled) {
         const text = new SpeechSynthesisUtterance(speech);
 
@@ -194,13 +193,6 @@ export default class ScreenReader {
   }
 
   getActiveElement() {
-    //   debugger;
-    //   if (
-    //     storyDocument.activeElement &&
-    //     storyDocument.activeElement !== storyDocument.body
-    //   ) {
-    //     return storyDocument.activeElement;
-    //   }
     return this.focusList[0];
   }
 
@@ -271,8 +263,6 @@ export default class ScreenReader {
   }
 
   keyDownHandler(evt) {
-      console.log('keyDownHandler')
-      debugger;
     if (!this.isRunning) {
       return false;
     }
