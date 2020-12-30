@@ -18,6 +18,8 @@ This is a personal project, while I am improving myself in accessibility topics,
 
 Just like any regular NPM package.
 
+Install as a dev dependency:
+
 ```bash
 npm install -d addon-screen-reader
 ```
