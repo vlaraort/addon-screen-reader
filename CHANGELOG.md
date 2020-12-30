@@ -1,4 +1,13 @@
-# 1.1.0 (2020-12-30)
+## [1.1.1](https://github.com/vlaraort/addon-screen-reader/compare/v1.1.0...v1.1.1) (2020-12-30)
+
+
+### Bug Fixes
+
+* add changeset ([4f148b3](https://github.com/vlaraort/addon-screen-reader/commit/4f148b3bdb3f438757e4bd7433248f0cc3ce679a))
+
+
+
+# [1.1.0](https://github.com/vlaraort/addon-screen-reader/compare/e1eefb69c78393eff5b76e9794d62881dc1c1bb8...v1.1.0) (2020-12-30)
 
 
 ### Bug Fixes
