@@ -53,7 +53,7 @@
   "scripts": {
     "build": "babel ./src --out-dir ./dist",
     "test": "echo 'no tests specified'",
-    "lint": "eslint ./ --ignore-path .gitignore",
+    "lint": "eslint ./",
     "lint:fix": "npm run lint -- --fix"
   },
   "husky": {

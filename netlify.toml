@@ -1,0 +1,4 @@
+[build]
+  base = "demo/"
+  publish = "storybook-static/"
+  command = "npm run build-storybook"
