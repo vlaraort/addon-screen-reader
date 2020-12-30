@@ -47,6 +47,9 @@ jobs:
         with:
           github-token: ${{ secrets.github_token }}
 
+      - name: Build
+        run: npm run build
+
       - name: Publish to npm
         run: npm publish
         env:
