@@ -2,3 +2,4 @@
   base = "demo/"
   publish = "storybook-static/"
   command = "npm run build-storybook"
+  ignore = "exit 1"
