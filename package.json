@@ -2,17 +2,20 @@
   "name": "addon-screen-reader",
   "version": "1.0.0",
   "description": "A Screen Reader Storybook addon",
-  "main": "dist/preset.js",
   "files": [
     "dist/**/*",
     "README.md",
-    "*.js",
-    "*.css"
+    "*.js"
   ],
   "keywords": [
     "storybook",
-    "addons"
+    "addons",
+    "accessibility",
+    "a11y",
+    "screen-reader"
   ],
+  "module": "dist/register.js",
+  "main": "dist/register.js",
   "author": "Víctor Lara",
   "license": "MIT",
   "dependencies": {
@@ -28,6 +31,7 @@
   },
   "scripts": {
     "build": "babel ./src --out-dir ./dist",
+    "test": "echo 'no tests specified'",
     "lint": "eslint ./ --ignore-path .gitignore",
     "lint:fix": "npm run lint -- --fix"
   },
