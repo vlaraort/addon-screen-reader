@@ -51,6 +51,10 @@ The CI integration of this project deploys a demo storybook in netlify, so you c
 
 [Demo](https://storybook-screen-reader.netlify.app/?path=/story/example-page--logged-in)
 
+## Feedback
+
+All the feedback is welcome! You can create any issue in the repository and I will reach you ASAP.
+
 ## Contributing
 
 You want to contribute? yay! 
