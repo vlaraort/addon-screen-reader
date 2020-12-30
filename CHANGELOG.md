@@ -1,3 +1,22 @@
+# [1.3.0](https://github.com/vlaraort/addon-screen-reader/compare/v1.1.2...v1.3.0) (2020-12-30)
+
+
+### Bug Fixes
+
+* build before publish ([6d258c2](https://github.com/vlaraort/addon-screen-reader/commit/6d258c29fe8e90df08f2944114f9f694405a828a))
+* bump version manually ([2a877db](https://github.com/vlaraort/addon-screen-reader/commit/2a877dbf650e91bd63d89929e4fb85d6dff06d3d))
+* eslint ([3f4e852](https://github.com/vlaraort/addon-screen-reader/commit/3f4e852636d3f3fc7fca333b6bb155fdda391c41))
+* remove .DS_Store ([802b3f1](https://github.com/vlaraort/addon-screen-reader/commit/802b3f11de18e86380cb9faeb4b65e268c9478ad))
+
+
+### Features
+
+* add netlify demo ([19cdad5](https://github.com/vlaraort/addon-screen-reader/commit/19cdad570f54ecc26191f4cd8447fc9ddbd29cca))
+* add repository and registry to package.json ([b94bd2a](https://github.com/vlaraort/addon-screen-reader/commit/b94bd2a79073a42226980522292904d902c21a55))
+* force demo to always build with last version of the plugin ([a070139](https://github.com/vlaraort/addon-screen-reader/commit/a070139df6a5931ccc2eb94182f4845ea9162e24))
+
+
+
 ## [1.1.2](https://github.com/vlaraort/addon-screen-reader/compare/v1.1.1...v1.1.2) (2020-12-30)
 
 
