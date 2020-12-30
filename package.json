@@ -2,17 +2,21 @@
   "name": "addon-screen-reader",
   "version": "1.1.2",
   "description": "A Screen Reader Storybook addon",
-  "files": [
-    "dist/**/*",
-    "README.md",
-    "*.js"
-  ],
   "keywords": [
     "storybook",
     "addons",
     "accessibility",
     "a11y",
     "screen-reader"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": "git://github.com/vlaraort/addon-screen-reader.git",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "*.js"
   ],
   "module": "dist/register.js",
   "main": "dist/register.js",
@@ -28,12 +32,6 @@
     "react-dom": "^17.0.1",
     "react-toggle-component": "^3.0.8",
     "styled-components": "^5.2.1"
-  },
-  "scripts": {
-    "build": "babel ./src --out-dir ./dist",
-    "test": "echo 'no tests specified'",
-    "lint": "eslint ./ --ignore-path .gitignore",
-    "lint:fix": "npm run lint -- --fix"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
@@ -51,6 +49,12 @@
     "husky": "^4.3.6",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.1"
+  },
+  "scripts": {
+    "build": "babel ./src --out-dir ./dist",
+    "test": "echo 'no tests specified'",
+    "lint": "eslint ./ --ignore-path .gitignore",
+    "lint:fix": "npm run lint -- --fix"
   },
   "husky": {
     "hooks": {
