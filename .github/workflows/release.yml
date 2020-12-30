@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+    paths-ignore:
+      - 'package.json'
+      - 'CHANGELOG.md'
 
 jobs:
   release:
@@ -39,7 +42,7 @@ jobs:
         run: yarn --frozen-lockfile
 
       # Automatic versioning https://github.com/TriPSs/conventional-changelog-action
-      - name: Version Bump
+      - name: Bump version and push tag
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.github_token }}
