@@ -1,3 +1,17 @@
+# [1.2.0](https://github.com/vlaraort/addon-screen-reader/compare/v1.1.2...v1.2.0) (2020-12-30)
+
+
+### Bug Fixes
+
+* build before publish ([6d258c2](https://github.com/vlaraort/addon-screen-reader/commit/6d258c29fe8e90df08f2944114f9f694405a828a))
+
+
+### Features
+
+* add repository and registry to package.json ([b94bd2a](https://github.com/vlaraort/addon-screen-reader/commit/b94bd2a79073a42226980522292904d902c21a55))
+
+
+
 ## [1.1.2](https://github.com/vlaraort/addon-screen-reader/compare/v1.1.1...v1.1.2) (2020-12-30)
 
 
