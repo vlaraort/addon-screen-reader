@@ -1,13 +1,12 @@
 {
   "name": "storybook-screen-reader-demo",
-  "version": "0.0.0",
-  "description": "Webcomponent storybook-screen-reader-demo following open-wc recommendations",
+  "version": "1.0.0",
+  "description": "Demo of the screen reader storybook plugin",
   "author": "storybook-screen-reader-demo",
   "license": "MIT",
   "main": "index.js",
   "module": "index.js",
   "scripts": {
-    "start": "web-dev-server",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -21,7 +20,7 @@
     "@storybook/addon-essentials": "^6.1.11",
     "@storybook/addon-links": "^6.1.11",
     "@storybook/web-components": "^6.1.11",
-    "addon-screen-reader": "^1.1.2",
+    "addon-screen-reader": "*",
     "babel-loader": "^8.2.2"
   }
 }
