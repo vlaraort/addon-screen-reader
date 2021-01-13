@@ -1,3 +1,12 @@
+# [1.6.0](https://github.com/vlaraort/addon-screen-reader/compare/v1.5.0...v1.6.0) (2021-01-13)
+
+
+### Features
+
+* force publish ([4364b5d](https://github.com/vlaraort/addon-screen-reader/commit/4364b5d77634dadf6059422b8984d7ce5bba3cd9))
+
+
+
 # [1.5.0](https://github.com/vlaraort/addon-screen-reader/compare/v1.1.2...v1.5.0) (2020-12-30)
 
 
