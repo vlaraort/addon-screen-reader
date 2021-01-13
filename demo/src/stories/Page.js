@@ -10,7 +10,6 @@ export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => html`
       onLogout,
       onCreateAccount,
     })}
-
     <section>
       <h2>Pages in Storybook</h2>
       <p>
