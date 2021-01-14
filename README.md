@@ -1,7 +1,7 @@
 # Storybook Screen Reader Addon
 
-[![npm version](https://badge.fury.io/js/addon-screen-reader.png)](https://badge.fury.io/js/addon-screen-reader)
-![pipeline_status](https://github.com/vlaraort/addon-screen-reader/workflows/Release/badge.svg)
+[![NPM Version](https://img.shields.io/npm/v/addon-screen-reader.svg)](https://www.npmjs.com/package/addon-screen-reader)
+![Pipeline status](https://github.com/vlaraort/addon-screen-reader/workflows/Release/badge.svg)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e36d3179-7759-43af-a426-0936026c5c60/deploy-status)](https://app.netlify.com/sites/storybook-screen-reader/deploys)
 
 Addon to display a custom screen reader in the addons panel of Storybook. Allows the developers to quickly test their accessibility without need of external screen reader or complex programs.
