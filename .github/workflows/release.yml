@@ -46,6 +46,7 @@ jobs:
         uses: TriPSs/conventional-changelog-action@v3
         with:
           github-token: ${{ secrets.GH_TOKEN }}
+          skip-on-empty: false # Needed because the version bump keeps occurring and the publishing, just avoids the commit
 
       - name: Build
         run: npm run build
