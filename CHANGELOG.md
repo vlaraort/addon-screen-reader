@@ -1,3 +1,12 @@
+# [1.8.0](https://github.com/vlaraort/addon-screen-reader/compare/v1.7.0...v1.8.0) (2021-01-14)
+
+
+### Features
+
+* corect version ci ([21ace7b](https://github.com/vlaraort/addon-screen-reader/commit/21ace7bc63998e966c72cada2657b771c0b251be))
+
+
+
 # [1.7.0](https://github.com/vlaraort/addon-screen-reader/compare/v1.6.0...v1.7.0) (2021-01-13)
 
 
@@ -46,15 +55,6 @@
 
 * fix publish step ([1ab1eb0](https://github.com/vlaraort/addon-screen-reader/commit/1ab1eb003d9afddb39cb8e29c7a9f7335b605f17))
 * fix publish step ([d770062](https://github.com/vlaraort/addon-screen-reader/commit/d7700621e96d4530f3ef42cfb7e9abf2563321f8))
-
-
-
-## [1.1.1](https://github.com/vlaraort/addon-screen-reader/compare/v1.1.0...v1.1.1) (2020-12-30)
-
-
-### Bug Fixes
-
-* add changeset ([4f148b3](https://github.com/vlaraort/addon-screen-reader/commit/4f148b3bdb3f438757e4bd7433248f0cc3ce679a))
 
 
 
