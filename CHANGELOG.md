@@ -1,3 +1,7 @@
+## [1.8.1](https://github.com/vlaraort/addon-screen-reader/compare/v1.8.0...v1.8.1) (2021-01-20)
+
+
+
 # [1.8.0](https://github.com/vlaraort/addon-screen-reader/compare/v1.7.0...v1.8.0) (2021-01-14)
 
 
@@ -45,16 +49,6 @@
 * add repository and registry to package.json ([b94bd2a](https://github.com/vlaraort/addon-screen-reader/commit/b94bd2a79073a42226980522292904d902c21a55))
 * force demo to always build with last version of the plugin ([a070139](https://github.com/vlaraort/addon-screen-reader/commit/a070139df6a5931ccc2eb94182f4845ea9162e24))
 * version bump ([ac51731](https://github.com/vlaraort/addon-screen-reader/commit/ac5173180e45423574ab6babc76c6e57bb0813c3))
-
-
-
-## [1.1.2](https://github.com/vlaraort/addon-screen-reader/compare/v1.1.1...v1.1.2) (2020-12-30)
-
-
-### Bug Fixes
-
-* fix publish step ([1ab1eb0](https://github.com/vlaraort/addon-screen-reader/commit/1ab1eb003d9afddb39cb8e29c7a9f7335b605f17))
-* fix publish step ([d770062](https://github.com/vlaraort/addon-screen-reader/commit/d7700621e96d4530f3ef42cfb7e9abf2563321f8))
 
 
 
