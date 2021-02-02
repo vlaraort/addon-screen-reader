@@ -25,8 +25,8 @@
   "dependencies": {
     "@babel/preset-env": "^7.12.11",
     "@babel/preset-react": "^7.12.10",
-    "@storybook/addons": "^6.1.11",
-    "@storybook/components": "^6.1.11",
+    "@storybook/addons": "^6.1.12",
+    "@storybook/components": "^6.1.12",
     "query-selector-shadow-dom": "^0.8.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
