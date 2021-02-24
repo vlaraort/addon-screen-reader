@@ -23,8 +23,8 @@
   "author": "Víctor Lara",
   "license": "MIT",
   "dependencies": {
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
     "@storybook/addons": "^6.1.12",
     "@storybook/components": "^6.1.12",
     "query-selector-shadow-dom": "^0.8.0",
