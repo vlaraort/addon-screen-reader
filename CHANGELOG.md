@@ -1,3 +1,12 @@
+## [1.8.3](https://github.com/vlaraort/addon-screen-reader/compare/v1.8.2...v1.8.3) (2021-02-24)
+
+
+### Bug Fixes
+
+* upgrade multiple dependencies with Snyk ([d62bfb9](https://github.com/vlaraort/addon-screen-reader/commit/d62bfb9860eea8b2a7b2eea933c2e10c1dccf19c))
+
+
+
 ## [1.8.2](https://github.com/vlaraort/addon-screen-reader/compare/v1.8.1...v1.8.2) (2021-02-02)
 
 
@@ -26,15 +35,6 @@
 ### Features
 
 * improve netlify ignore ([487928a](https://github.com/vlaraort/addon-screen-reader/commit/487928aa2b9cd4b246c1045a046d003fe0968d8a))
-
-
-
-# [1.6.0](https://github.com/vlaraort/addon-screen-reader/compare/v1.5.0...v1.6.0) (2021-01-13)
-
-
-### Features
-
-* force publish ([4364b5d](https://github.com/vlaraort/addon-screen-reader/commit/4364b5d77634dadf6059422b8984d7ce5bba3cd9))
 
 
 
