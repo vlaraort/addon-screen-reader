@@ -36,7 +36,7 @@ npm install -d addon-screen-reader
 or
 
 ```bash
-yarn add -dev addon-screen-reader
+yarn add addon-screen-reader -D
 ```
 
 
